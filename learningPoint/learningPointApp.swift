@@ -11,7 +11,9 @@ import SwiftUI
 struct learningPointApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+//            ContentViewCopy2()
+            ContentViewCopy3()
         }
     }
 }
