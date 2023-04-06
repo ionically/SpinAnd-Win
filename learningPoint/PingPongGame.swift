@@ -13,6 +13,35 @@ struct PingPongGameOLD: View {
     @State var timer: Publishers.Autoconnect<Timer.TimerPublisher> = Timer.publish(every: 1/60, on: .main, in: .common).autoconnect()
     
     var body: some View {
+        HStack(spacing: 15) {
+            Rectangle()
+                .fill(Color.red)
+                .frame(width: 25, height: 25)
+            Rectangle()
+                .fill(Color.red)
+                .frame(width: 25, height: 25)
+            Rectangle()
+                .fill(Color.red)
+                .frame(width: 25, height: 25)
+            Rectangle()
+                .fill(Color.red)
+                .frame(width: 25, height: 25)
+            Circle()
+                .fill(Color.yellow)
+                .frame(width: 25, height: 25)
+            Rectangle()
+                .fill(Color.red)
+                .frame(width: 25, height: 25)
+            Rectangle()
+                .fill(Color.red)
+                .frame(width: 25, height: 25)
+            Rectangle()
+                .fill(Color.red)
+                .frame(width: 25, height: 25)
+            Rectangle()
+                .fill(Color.red)
+                .frame(width: 25, height: 25)
+        }
         GeometryReader { geometry in
             ZStack {
                 Circle()
@@ -143,13 +172,22 @@ struct MovingCircles: View {
         HStack(spacing: 15) {
             Circle()
                 .fill(Color.blue)
-                .frame(width: 20, height: 20)
+                .frame(width: 25, height: 25)
             Circle()
                 .fill(Color.blue)
-                .frame(width: 20, height: 20)
+                .frame(width: 25, height: 25)
             Circle()
                 .fill(Color.blue)
-                .frame(width: 20, height: 20)
+                .frame(width: 25, height: 25)
+            Circle()
+                .fill(Color.blue)
+                .frame(width: 25, height: 25)
+            Circle()
+                .fill(Color.blue)
+                .frame(width: 25, height: 25)
+            Circle()
+                .fill(Color.blue)
+                .frame(width: 25, height: 25)
         }
     }
 }
@@ -191,7 +229,6 @@ struct ExplosionView: View {
         }
     }
 }
-
 struct PingPongGameOLD_Previews: PreviewProvider {
     static var previews: some View {
         PingPongGameOLD()

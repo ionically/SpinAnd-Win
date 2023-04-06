@@ -12,7 +12,6 @@ struct learningPointApp: App {
     var body: some Scene {
         WindowGroup {
 //            ContentView()
-//            ContentViewCopy2()
             PingPongGameOLD()
         }
     }
